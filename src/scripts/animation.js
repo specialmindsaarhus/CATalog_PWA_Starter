@@ -42,13 +42,11 @@ document.getElementById("newCat").addEventListener("click", (event) => {
 const imageElement = document.getElementById("fetchImage");
 
 imageElement.addEventListener("load", () => {
-  console.log("Image has loaded!");
   loadIn();
   loadImageIn();
 });
 
 // Check if the image is already loaded
 if (imageElement.complete) {
-  console.log("Image is already loaded.");
   loadImageIn();
 }

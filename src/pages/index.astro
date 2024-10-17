@@ -8,54 +8,58 @@ import ButtonComponent from "../components/ButtonComponent.astro";
 <Layout title="Welcome to Astro.">
   <main>
     <div id="fetchContainer" class="flexColumn main-padding">
-      <!-- Indsæt ImageComponent	-->
-      <ImageComponent
-        src="https://cdn2.thecatapi.com/images/ets_USqdE.jpg"
-        alt="Cat Image"
-      />
+      <h3 class="text-center">
+        My First PWA
+      </h3>
+      
 
-      <!-- 
+
+
+
+
+
+
+      
+    <!--
+      nedenfor er til den del omkring HTML og CSS
+    -->
+    <!-- Indsæt ImageComponent	-->
+      
+
+    <!-- 
 		Indsæt tagline
 		brug et <p class="text-center tiny-text"></p>
 		-->
-      <p class="text-center tiny-text">
-        The CATalog <br />
-        Delivers Cats around the clock.
-      </p>
+      
 
-      <!-- 
+    <!-- 
 		Container til ikoner med tekst 
 		Inde i containeren indsæt IconWithText ---
 		Kan se således ud:
 
 			<IconWithText
           	iconSrc="../../public/icons/pasport.svg"
-          	subText="/Temperament"
-            id=""
+            mainText="Main text here"
+          	subText="Suntext here"
+            id="id here"
         	/>
-	-->
-      <div class="text-container">
-        <IconWithText
-          iconSrc="../../public/icons/pasport.svg"
-          subText="/Temperament"
-          id="fetchContentOne"
-        />
-        <IconWithText
-          iconSrc="../../public/icons/box.svg"
-          subText="/Origin"
-          id="fetchContentTwo"
-        />
-        <IconWithText
-          iconSrc="../../public/icons/energy.svg"
-          subText="/Energy level"
-          id="fetchContentThree"
-        />
-      </div>
+	  -->
+      
     </div>
 
-    <!--	
-		Indsæt ButtonComponent med attribute: text="Din tekst"
-	 -->
-    <ButtonComponent text="New Cat" />
+    <!--Indsæt ButtonComponent med attribute: text="Din tekst"-->
+    
   </main>
 </Layout>
+
+<style>
+  #fetchContainer {
+    opacity: 1;
+  }
+</style>
+<!--
+  <script>
+    import "../scripts/fetch.js";
+    import "../scripts/animation.js";
+  </script>
+-->
